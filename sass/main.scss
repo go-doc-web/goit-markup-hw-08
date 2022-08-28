@@ -1,0 +1,43 @@
+@import './utilis/variables';
+@import './utilis/hidden';
+
+@import './base/body';
+@import './base/reset';
+@import './base/common';
+
+@import './components/container';
+@import './components/section';
+
+@import './components/logo';
+@import './components/button';
+// Modal
+@import './components/modal/modal';
+@import './components/modal/modal-form';
+
+// Layout
+
+// Header
+
+@import './layout/header/header';
+
+// Main-page
+
+@import './layout/main-page/hero';
+@import './layout/main-page/peculiarities';
+@import './layout/main-page/specialization';
+@import './layout/main-page/team';
+@import './layout/main-page/clients';
+
+// Portfolio-page
+@import './layout/portfolio-page/filter';
+@import './layout/portfolio-page/portfolio-cards';
+
+// Footer
+
+@import './layout/footer/footer';
+
+@import './layout/footer/address';
+@import './layout/footer/footer-social';
+@import './layout/footer/footer-form';
+
+// @import '';

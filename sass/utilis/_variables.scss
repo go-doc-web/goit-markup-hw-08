@@ -1,0 +1,25 @@
+:root {
+  /* Color Var */
+
+  --primery-bg-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --footer-bg-color: #2f303a;
+  --primery-btn-color: #f5f4fa;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+  --main-title-color: #ffffff;
+  --white-text-color: #ffffff;
+  --first-text-color: #757575;
+  --second-text-color: #212121;
+  --accent-color: #2196f3;
+  --hover-color-btn: #188ce8;
+  --hover-link: #2196f3;
+  --border-line: #ececec;
+
+  /* Margin */
+
+  --marg-r-30: 30px;
+
+  /* transition */
+
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
