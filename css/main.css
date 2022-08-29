@@ -170,6 +170,7 @@ b {
 
 .footer__logo {
   width: 154px;
+  padding: 0;
 }
 @media screen and (max-width: 767px) {
   .footer__logo {
