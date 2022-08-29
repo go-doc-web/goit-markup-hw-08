@@ -1,12 +1,14 @@
 .filter {
   display: flex;
-  justify-content: center;
   align-items: center;
 
   /* если строка будет переполнятся  flex-wrap: wrap; */
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 50px;
+  @include tablet {
+    justify-content: center;
+  }
 }
 
 /* .filter__item + .filter__item {
@@ -29,8 +31,8 @@
   border-radius: 4px;
   cursor: pointer;
 
-  transition: background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function),
-    color 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function), color 250ms var(--timing-function);
 
   &--active,
   &:hover,

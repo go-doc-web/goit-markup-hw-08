@@ -1,0 +1,137 @@
+.menu__btn {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.menu-open {
+  margin-left: auto;
+  @include tablet {
+    display: none;
+  }
+}
+
+.menu-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  fill: #212121;
+  opacity: 0.4;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.container--mob {
+  margin: 0;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 30px 48px 30px;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.mob-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+  @media screen and (max-width: 400px) {
+    margin-bottom: 24px;
+  }
+}
+
+.mob-menu__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc(47 / 40);
+  letter-spacing: 0.02em;
+
+  color: #212121;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &--current {
+    color: var(--accent-color);
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
+
+.connect__tel {
+  display: block;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: calc(40 / 34);
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+  margin-bottom: 32px;
+  @media screen and (max-width: 400px) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.connect__mail {
+  display: block;
+  margin-bottom: 64px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.02em;
+
+  color: #757575;
+  @media screen and (max-width: 400px) {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+
+.mob-soc {
+  display: flex;
+
+  &__link {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    letter-spacing: 0.02em;
+
+    color: var(--accent-color);
+    @media screen and (max-width: 400px) {
+      font-size: 12px;
+      line-height: 1.2;
+    }
+  }
+}
+
+.mob-soc__item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mob-soc__item:not(:first-child) {
+  padding-left: 10px;
+}
