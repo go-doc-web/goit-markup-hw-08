@@ -1,6 +1,12 @@
 .address {
+  width: 232px;
   font-style: normal;
   max-height: 81px;
+
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 .address__item:not(:last-child) {
