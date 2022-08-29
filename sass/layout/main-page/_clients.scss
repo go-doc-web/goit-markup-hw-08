@@ -1,14 +1,27 @@
 .clients {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
+
+  @include desctop {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+
+.clients__item {
+  width: calc((100% - 30px) / 2);
+  @include tablet {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+
   height: 92px;
   border: 1px solid #afb1b8;
 
@@ -21,6 +34,10 @@
   &:focus {
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
+  }
+
+  @include desctop {
+    width: 170px;
   }
 }
 

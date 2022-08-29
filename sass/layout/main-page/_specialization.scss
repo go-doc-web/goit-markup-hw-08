@@ -1,5 +1,9 @@
 .specialization {
-  display: flex;
+  // display: flex;
+  display: none;
+  @include desctop {
+    display: flex;
+  }
 }
 
 .specialization__thumb {
