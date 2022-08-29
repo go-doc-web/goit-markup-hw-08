@@ -34,20 +34,3 @@
     flex-grow: 1;
   }
 }
-
-.footer__logo {
-  width: 154px;
-
-  @media screen and (max-width: 767px) {
-    display: block;
-    margin: 0 auto 20px;
-  }
-  @include tablet {
-    margin-bottom: 20px;
-  }
-  @include desctop {
-    margin: 0;
-
-    margin-bottom: 20px;
-  }
-}

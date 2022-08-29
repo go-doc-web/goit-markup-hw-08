@@ -102,11 +102,16 @@
   align-items: center;
   justify-content: center;
 
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
 
   color: #757575;
+
+  @include desctop {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 
   span {
     width: 16px;
@@ -128,13 +133,17 @@
       border-color: var(--accent-color);
     }
   }
+
+  // b {
+  //   max-width: 400px;
+  // }
 }
 
 .check-link {
   color: var(--accent-color);
   margin-left: 4px;
 
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }

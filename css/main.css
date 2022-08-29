@@ -150,6 +150,27 @@ b {
   color: var(--accent-color);
 }
 
+.footer__logo {
+  width: 154px;
+}
+@media screen and (max-width: 767px) {
+  .footer__logo {
+    display: block;
+    margin: 0 auto 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+
 .logo--ligth {
   color: var(--white-text-color);
 }
@@ -196,16 +217,33 @@ b {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  min-height: 581px;
   padding: 40px;
   border-radius: 4px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 300ms var(--timing-function);
+  overflow-y: scroll;
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
+}
+@media screen and (max-width: 467px) {
+  .modal {
+    min-width: 310px;
+    height: 460px;
+  }
+}
+@media screen and (min-width: 468px) and (max-width: 1199px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal-close {
@@ -324,10 +362,16 @@ b {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 .check-text span {
   width: 16px;
@@ -351,7 +395,7 @@ b {
 .check-link {
   color: var(--accent-color);
   margin-left: 4px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
@@ -923,27 +967,6 @@ b {
   }
 }
 
-.footer__logo {
-  width: 154px;
-}
-@media screen and (max-width: 767px) {
-  .footer__logo {
-    display: block;
-    margin: 0 auto 20px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer__logo {
-    margin-bottom: 20px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer__logo {
-    margin: 0;
-    margin-bottom: 20px;
-  }
-}
-
 .address {
   width: 232px;
   font-style: normal;
@@ -986,8 +1009,8 @@ b {
 
 .footer-soc {
   display: flex;
-  gap: 10px;
   justify-content: center;
+  gap: 10px;
 }
 
 .footer__social-text {
