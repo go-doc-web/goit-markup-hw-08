@@ -489,7 +489,7 @@ b {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow-y: auto;
+  overflow: auto;
 }
 
 .mob-menu {
@@ -991,18 +991,17 @@ b {
   align-items: center;
   /* если строка будет переполнятся  flex-wrap: wrap; */
   flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 50px;
+  column-gap: 8px;
+  row-gap: 15px;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .filter {
     justify-content: center;
+    margin-bottom: 50px;
   }
 }
 
-/* .filter__item + .filter__item {
-  margin-left: 8px;
-} */
 .filter__btn {
   padding: 6px 22px;
   font-family: inherit;
@@ -1024,30 +1023,38 @@ b {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.cards {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
-  /* gap: 30px; */
+@media screen and (min-width: 768px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
-/* 
 .cards__item {
-  flex-basis: calc(100% / 3 - 30px);
-  flex-basis: calc((100% - 60px) / 3);
-  margin-top: 30px;
-  margin-left: 30px;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .cards__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cards__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
 
-  background: var(--primery-bg-color);
-} */
 .cards__link {
   display: block;
-  flex-basis: calc(33.3333333333% - 30px);
-  /* flex-basis: calc((100% - 60px) / 3); */
-  margin-top: 30px;
-  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   background: var(--primery-bg-color);
   transition: box-shadow 250ms var(--timing-function);
 }
@@ -1084,6 +1091,7 @@ b {
 }
 
 .cards__content {
+  flex-grow: 1;
   padding: 20px 24px 19px;
   border: 1px solid var(--border-line);
   border-top: none;
