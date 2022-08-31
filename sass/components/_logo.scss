@@ -30,6 +30,7 @@
 .footer__logo {
   width: 154px;
   padding: 0;
+  text-align: center;
 
   @media screen and (max-width: 767px) {
     display: block;
@@ -37,6 +38,7 @@
   }
   @include tablet {
     margin-bottom: 20px;
+    text-align: left;
   }
   @include desctop {
     margin: 0;
