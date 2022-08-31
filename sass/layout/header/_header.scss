@@ -23,7 +23,6 @@
     -webkit-column-gap: 50px;
     -moz-column-gap: 50px;
     column-gap: 50px;
-    gap: 50px;
   }
 }
 
@@ -75,12 +74,13 @@
   @include tablet {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: center;
+    // gap: 10px;
   }
 
   @include desctop {
-    display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
     gap: 50px;
   }
@@ -95,14 +95,20 @@
 .connection__link {
   display: flex;
   align-items: center;
-  gap: 10px;
+  column-gap: 10px;
   // padding: 4px 0;
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.02em;
   color: inherit;
 
   transition: color 250ms var(--timing-function);
+
+  @include desctop {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+  }
 
   .connection__icon {
     fill: currentColor;

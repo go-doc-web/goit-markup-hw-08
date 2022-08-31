@@ -625,7 +625,6 @@ b {
     -webkit-column-gap: 50px;
     -moz-column-gap: 50px;
     column-gap: 50px;
-    gap: 50px;
   }
 }
 
@@ -667,13 +666,13 @@ b {
   .connection {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .connection {
-    display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
     gap: 50px;
   }
@@ -688,12 +687,19 @@ b {
 .connection__link {
   display: flex;
   align-items: center;
-  gap: 10px;
+  column-gap: 10px;
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.02em;
   color: inherit;
   transition: color 250ms var(--timing-function);
+}
+@media screen and (min-width: 1200px) {
+  .connection__link {
+    font-size: 14px;
+    line-height: 1.1428571429;
+  }
 }
 .connection__link .connection__icon {
   fill: currentColor;
