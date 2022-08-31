@@ -22,8 +22,12 @@
 
 .header__logo {
   @include tablet {
-    margin-right: 93px;
+    margin-right: 88px;
     padding: 0;
+  }
+
+  @include desctop {
+    margin-right: 93px;
   }
 }
 

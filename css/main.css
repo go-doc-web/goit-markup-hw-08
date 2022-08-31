@@ -163,8 +163,13 @@ b {
 
 @media screen and (min-width: 768px) {
   .header__logo {
-    margin-right: 93px;
+    margin-right: 88px;
     padding: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
   }
 }
 
@@ -620,6 +625,7 @@ b {
     -webkit-column-gap: 50px;
     -moz-column-gap: 50px;
     column-gap: 50px;
+    gap: 50px;
   }
 }
 

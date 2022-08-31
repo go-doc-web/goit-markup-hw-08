@@ -23,9 +23,15 @@
     -webkit-column-gap: 50px;
     -moz-column-gap: 50px;
     column-gap: 50px;
-    // gap: 50px;
+    gap: 50px;
   }
 }
+
+// @include tablet {
+//   .navigation__item:not(:last-child) {
+//     margin-right: 50px;
+//   }
+// }
 
 .navigation__link {
   position: relative;
