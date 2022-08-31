@@ -20,7 +20,10 @@
   display: none;
   @include tablet {
     display: flex;
-    gap: 50px;
+    -webkit-column-gap: 50px;
+    -moz-column-gap: 50px;
+    column-gap: 50px;
+    // gap: 50px;
   }
 }
 
@@ -66,6 +69,7 @@
   @include tablet {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
 
   @include desctop {
@@ -86,7 +90,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 7px 0;
+  padding: 4px 0;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;

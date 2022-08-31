@@ -615,7 +615,9 @@ b {
 @media screen and (min-width: 768px) {
   .navigation {
     display: flex;
-    gap: 50px;
+    -webkit-column-gap: 50px;
+    -moz-column-gap: 50px;
+    column-gap: 50px;
   }
 }
 
@@ -657,6 +659,7 @@ b {
   .connection {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -678,7 +681,7 @@ b {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 7px 0;
+  padding: 4px 0;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
