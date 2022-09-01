@@ -1,7 +1,9 @@
 .header {
-  @include tablet {
-    border-bottom: 1px solid var(--border-line);
-  }
+  border-bottom: 1px solid var(--border-line);
+
+  // @include tablet {
+  //   border-bottom: 1px solid var(--border-line);
+  // }
 }
 
 .header__container {

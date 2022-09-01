@@ -1,12 +1,20 @@
+.footer__address {
+  text-align: center;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @include tablet {
+  }
+  @include desctop {
+    margin-right: 70px;
+
+    text-align-last: left;
+  }
+}
+
 .address {
-  width: 232px;
   font-style: normal;
   max-height: 81px;
-
-  @media screen and (max-width: 767px) {
-    margin: 0 auto;
-    text-align: center;
-  }
 }
 
 .address__item:not(:last-child) {

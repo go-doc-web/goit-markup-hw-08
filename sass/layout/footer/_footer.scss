@@ -9,28 +9,9 @@
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    // justify-content: center;
   }
 
-  @media screen and (max-width: 1199px) {
-    justify-content: center;
-  }
-  @include desctop {
-    display: flex;
-  }
-}
-
-.footer__address {
-  max-width: 232px;
-  @media screen and (max-width: 767px) {
-    margin: 0 auto;
-    margin-bottom: 60px;
-  }
-  @include tablet {
-    margin-right: 165px;
-  }
-  @include desctop {
-    margin-right: 70px;
-    flex-grow: 1;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    justify-content: space-around;
   }
 }
