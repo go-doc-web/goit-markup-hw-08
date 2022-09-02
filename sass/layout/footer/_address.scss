@@ -6,8 +6,9 @@
   @include tablet {
   }
   @include desctop {
+    max-width: 232px;
     margin-right: 70px;
-
+    flex-grow: 1;
     text-align-last: left;
   }
 }
